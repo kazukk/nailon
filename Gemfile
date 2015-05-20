@@ -28,8 +28,10 @@ gem "paperclip", "~> 4.2"
 #gem "paperclip-dropbox"
 gem 'carrierwave'
 gem "fog"
-
 gem "figaro"
+
+gem 'devise'
+
 
 group :production do
   gem 'pg'
