@@ -9,7 +9,7 @@ CarrierWave.configure do |config|
     #:endpoint               => 'https://s3.example.com:8080' # optional, defaults to nil
     #:endpoint               => "https://s3.amazonaws.com"
   }
-  config.fog_directory  = ENV["config.fog_directory"]                     # required
+  config.fog_directory  = 'nailon.ks'                     # required
   
 
 end
