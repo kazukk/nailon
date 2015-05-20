@@ -3,3 +3,4 @@ class AddImageToListings < ActiveRecord::Migration
     add_column :listings, :image, :string
   end
 end
+  
