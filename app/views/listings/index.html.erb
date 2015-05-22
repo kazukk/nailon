@@ -1,3 +1,17 @@
+<div class="jumbotron">
+<h1>Handdesigned nail arts<br>
+
+from  all over the world! </h1>
+<h2> Discover your favorite dsign </h2>
+
+<% if user_signed_in? %>
+<% else %>
+<%= link_to 'Sign up now!', new_user_registration_path, class: "btn btn-primary" %>
+<% end %>
+
+<%= link_to 'Sign in', new_user_registration_path, class: "btn btn-primary" %>
+
+</div>
 
 <div class="center">
 
