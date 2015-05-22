@@ -4,9 +4,9 @@ class OrdersController < ApplicationController
 
   # GET /orders
   # GET /orders.json
-  def index
-    @orders = Order
-  end
+  #def index
+ #   @orders = Order
+#  end
 
   def sales
     @orders = Order.all.where(seller: current_user).order("created_at DESC")
@@ -18,8 +18,8 @@ class OrdersController < ApplicationController
 
   # GET /orders/1
   # GET /orders/1.json
-  def show
-  end
+  #def show
+  #end
 
   # GET /orders/new
   def new
@@ -29,8 +29,8 @@ class OrdersController < ApplicationController
   end
 
   # GET /orders/1/edit
-  def edit
-  end
+  #def edit
+  #end
 
   # POST /orders
   # POST /orders.json
@@ -71,13 +71,13 @@ class OrdersController < ApplicationController
 
   # DELETE /orders/1
   # DELETE /orders/1.json
-  def destroy
-    @order.destroy
-    respond_to do |format|
-      format.html { redirect_to orders_url, notice: 'Order was successfully destroyed.' }
-      format.json { head :no_content }
-    end
-  end
+ # def destroy
+  #  @order.destroy
+   # respond_to do |format|
+    #  format.html { redirect_to orders_url, notice: 'Order was successfully destroyed.' }
+     # format.json { head :no_content }
+    #end
+  #end
 
   private
     # Use callbacks to share common setup or constraints between actions.
