@@ -1,0 +1,36 @@
+<div class="center">
+  <h2> Your sales data </h2>
+</div>
+
+<table class= "table table-stripped table-bordered">
+<tr>
+ <th class= "center">Item</th>
+    <th class= "center">Name</th>
+    <th class= "center">Price</th>
+    <th class= "center">customer</th>
+    <th class= "center">Date sold</th>
+</tr>
+
+
+<% @orders.each do |order| %>
+<tr>
+    	<td><%= image_tag order.listing.image.thumb.url %></td>
+      <td><%= order.listing.name %></td>
+      <td><%= number_to_currency(order.listing.price) %></td>
+      <td><%= order.buyer.name %>
+      <td class="center"><%= order.created_at.strftime("%B %-d, %Y") %></td>
+
+      </tr> 
+<% end %>
+
+</tr>
+</table>
+<br>
+
+<div class: "center">
+<% if user_signed_in? %>
+<%= link_to 'New Listing', new_listing_path, class: "btn btn-primary", data: { no_turbolink: true } %>
+
+<% end %>
+
+</div>
