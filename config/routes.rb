@@ -13,6 +13,7 @@ get 'seller' => "listings#seller"
 get 'sales' => "orders#sales"
 get 'purchases' => "orders#purchases"
 
+get 'pay' => 'api#pay'
 
 
 root 'listings#index'

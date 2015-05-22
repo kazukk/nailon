@@ -90,3 +90,14 @@ class OrdersController < ApplicationController
       params.require(:order).permit(:address, :city, :state)
     end
 end
+
+# webpay payment 
+
+  def pay
+    webpay = WebPay.new('test_secret_8Ttchc6rJh224ojeXoeqa088')
+  webpay.charge.create(
+   amount: 400,
+   currency: "jpy",
+   card: "tok_SampleCardToken"
+)
+  end

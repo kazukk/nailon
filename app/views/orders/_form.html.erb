@@ -25,6 +25,14 @@
     <%= f.label :state %><br>
     <%= f.text_field :state, class: "form-control" %>
   </div>
+
+<div class="form-group">
+<form action="/purchase" method="post">
+  <script src="https://checkout.webpay.jp/v2/" class="webpay-button" data-key="test_public_bx12gtgMO8um9Mqd705oTbIb" data-lang="ja" data-partial="true", class: "btn btn-primary"></script>
+</form>
+</div>
+
+
   <div class="form-group">
     <%= f.submit "Submit Order", class: "btn btn-primary" %>
   </div>
