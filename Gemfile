@@ -32,6 +32,8 @@ gem "figaro"
 gem "mini_magick"
 gem 'devise'
 gem 'webpay'
+gem 'stripe'
+gem 'spike_pay'
 
 
 group :production do
