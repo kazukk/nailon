@@ -34,7 +34,7 @@ gem 'devise'
 gem 'webpay'
 gem 'stripe'
 gem 'spike_pay'
-
+gem 'jquery-turbolinks'
 
 group :production do
   gem 'pg'
